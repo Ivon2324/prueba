@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="ejercico4.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libreta de contactos</title>
+</head>
+<body>
+    <div>
+        <nav id="navegation">
+            <h1 id="titulo-1">Libreta de contactos</h1>
+       </nav>
+    </div>
+    <h2 class="titulos">Creación de contactos</h2>
+    <form id="formulario">
+      <div id="inputs">
+        <div>
+          <label for="name">Nombre:</label>
+          <input class="formulario-input"  required type="text" name="Nombre" id="input-name" placeholder="Nombre" autocomplete="off">
+      </div>
+      <div>
+          <label for="Numero">Télefono:</label>
+          <input required class="formulario-input"  type="tel" name="Numero" id="input-number" placeholder="+58 4242208098" autocomplete="off">
+          <p class="error">El formato debe ser xxx-xxxxxxx</p>
+      </div>
+ 
+      </div>
+        
+        <button id="btn-guardar" type="submit" disabled>Guardar Contacto</button>
+
+
+    </form>
+    
+<h2 class="titulos">Contactos</h2>
+  <ul id="lista">
+     <li class="elemento">Gabriel Garcia 04122110509 <button class="delete">&#10006</button></li>
+    <li class="elemento">Juan Mecanico 04145698748 <button class="delete">&#10006</button></li>
+    <li class="elemento">Juan Mecanico 04145698748 <button class="delete">&#10006</button></li>
+     <li class="elemento">Alexander Gomez 04245698745 <button class="delete">&#10006</button></li>
+    
+  </ul>
+</body>
+<script src="ejercicio4.js"></script>
+</html>
